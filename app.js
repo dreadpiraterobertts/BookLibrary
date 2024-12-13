@@ -7,11 +7,14 @@ const read = document.querySelector('.read')
 
 const myLibrary = []
 //object constructor
-function Book(name,author,pages,isRead) {
-    this.name = name
-    this.author = author
-    this.pages = pages
-    this.isRead = isRead
+class Book {
+    constructor(name,author,pages,isRead){
+        this.name = name
+        this.author = author
+        this.pages = pages
+        this.isRead = isRead
+    }
+ 
 }
 
 function addBookToLibrary(name,author,pages) {
